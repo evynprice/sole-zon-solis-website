@@ -23,3 +23,11 @@ Our team placed 7th nationally out of over 170 teams, with one of the highest gr
 | `activedirectory2`   | Environment AD connection       |
 | `imap-simple`        | Environment IMAP connection     |
 | `nodemailer`         | Environment SMTP connection     |
+
+## Screenshots
+![home page](https://github.com/evynprice/sole-zon-solis-website/blob/main/screenshots/homepage.png?raw=true)
+![contact page](https://github.com/evynprice/sole-zon-solis-website/blob/main/screenshots/contact.png?raw=true)
+![manufacturing page](https://github.com/evynprice/sole-zon-solis-website/blob/main/screenshots/manufacturing.png?raw=true)
+![solar page](https://github.com/evynprice/sole-zon-solis-website/blob/main/screenshots/solar.png?raw=true)
+![login page](https://github.com/evynprice/sole-zon-solis-website/blob/main/screenshots/login.png?raw=true)
+![admin page](https://github.com/evynprice/sole-zon-solis-website/blob/main/screenshots/admin.png?raw=true)
