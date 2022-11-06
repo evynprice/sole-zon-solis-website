@@ -1,0 +1,100 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <style>
+    .btn-link {
+      border: none;
+      outline: none;
+      background: none;
+      cursor: pointer;
+      color: #0000EE;
+      padding: 0;
+      text-decoration: underline;
+      font-family: inherit;
+      font-size: inherit;
+    }
+  </style>
+</head>
+<body>
+  {{> header this }}
+  <!-- ftp-->
+  <div>
+    <div class="manufacturing container">
+      <div class="p-5 text-center bg-image" style="
+            background-image: url('images/min/file.jpg');
+            background-size:  cover;
+            background-repeat: no-repeat;
+            height: 125%;
+            ">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+          <h1 style="color:white;">File Server</h1>
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="row align-items-center" style="color:white;">
+              <div class="col-sm-6">
+                <center>
+                  {{#each ftp}}
+                    <tr>
+                      <td>{{name}}</td>
+                      <br>
+                      <br>
+                    </tr>
+                  {{/each}}
+                </center>
+              </div>
+              <div class="col-sm-6">
+                <center>
+                  <form method="POST" action="/admin">
+                    {{#each ftp}}
+                      <tr>
+                        <td>
+                          <button style="color: white;" class="btn-link" value="{{name}}" name="{{name}}">Download</button>
+                        </td>
+                        <br>
+                        <br>
+                      </tr>
+                    {{/each}}
+                  </form>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- email-->
+  <div>
+    <div class="manufacturing container">
+      <div class="p-5 text-center bg-image" style="
+            background-image: url('images/min/email.jpg');
+            background-size:  cover;
+            background-repeat: no-repeat;
+            height: 125%;
+            ">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <center style="color:white;">
+              <h1 style="white;">Emails</h1>
+              {{#each emails}}
+                <tr>
+                  <td>
+                    <p style="color: white;">{{body}}</p>
+                  </td>
+                  <br>
+                </tr>
+              {{/each}}
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{> footer}}
+</body>
+</html>

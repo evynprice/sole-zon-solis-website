@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">
+      <img src="/images/min/logo.png" width="350" height="80" alt="SoleZonSolis">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact Us</a>
+        </li>
+        <div class="dropdown-divider"></div>
+        <li class="nav-item">
+          <a class="nav-link" href="/manufacturing">Manufacturing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/solar">Solar Generation</a>
+        </li>
+        {{#if admin}}
+          <li class="nav-item">
+            <a class="nav-link" href="/admin">Admin Panel</a>
+          </li>
+        {{/if}}
+    </div>
+    </ul>
+    <span class="navbar-item">
+      {{#if loggedin}}
+        <a class="nav-link" href="/logout">Logout</a>
+      {{else}}
+        <a class="nav-link" href="/login">Login</a>
+      {{/if}}
+    </span>
+    </div>
+  </nav>
+</header>

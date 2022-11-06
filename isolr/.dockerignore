@@ -1,0 +1,6 @@
+Dockerfile
+.gitignore
+db.sqlite
+node_modules/
+cache/
+tmp/

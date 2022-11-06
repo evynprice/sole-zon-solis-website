@@ -1,0 +1,72 @@
+<head>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    Swal.fire('Thank you!', 'Your message has been received, we will get in touch with you shortly.', 'success')
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+</head>
+<body>
+  {{> header this }}
+  <div class="col-xs-12" style="height:50px;"></div>
+  <div class="container">
+    <!-- Background image -->
+    <div class="p-5 text-center bg-image" style="
+      background-image: url('images/min/contact.jpg');
+      background-size:  cover;
+      background-repeat: no-repeat;
+      height: 125%;
+    ">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.75); ">
+        <div class="row align-items-center" style="color:white;">
+          <div class="col-sm-6">
+            <center>
+              <h4> Contact Information </h4>
+              <p> Welcome to SoleZonSolis Energy, we are happy to answer any questions you might have about our services. Please fill out the contact us form and we will get back to you shortly! <br>
+                <br> +1 (123) 456-7890 <br> contact@solezonsolis.com
+              </p>
+            </center>
+          </div>
+          <div class="col-sm-6">
+            <!-- Wrapper container -->
+            <div class="container py-4">
+              <center>
+                <h3>Contact Us Form</h3>
+              </center>
+              <!-- Bootstrap 5 starter form -->
+              <!-- Name input -->
+              <form action="contact" enctype="multipart/form-data" method="POST">
+                <div class="mb-3">
+                  <label class="form-label" for="name">Name</label>
+                  <input class="form-control" name="name" id="name" type="text" placeholder="Name" required />
+                </div>
+                <!-- Email address input -->
+                <div class="mb-3">
+                  <label class="form-label" for="emailAddress">Email Address</label>
+                  <input class="form-control" name="email" id="email" type="email" placeholder="Email Address" required />
+                </div>
+                <!-- Phone input -->
+                <div class="mb-3">
+                  <label class="form-label" for="tel">Phone Number</label>
+                  <input class="form-control" name="tel" id="tel" type="tel" placeholder="Phone Number" required />
+                </div>
+                <!-- Phone input -->
+                <div class="mb-3">
+                  <label class="form-label" for="file-upload">File Upload</label>
+                  <input class="form-control" name="file" id="file" type="file" placeholder="file" required />
+                </div>
+                <!-- Form submit button -->
+                <div class="d-grid">
+                  <button class="btn btn-primary btn-lg" name="submit" id="submit" type="submit" value="suc">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{> footer}}
+</body>
+</html>

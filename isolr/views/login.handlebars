@@ -1,0 +1,29 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+  {{> header this }}
+  <div class="col-xs-12" style="height:50px;"></div>
+  <div class="container">
+    <h1>Sign In</h1>
+    <form action="/login" method="POST">
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <label class="form-label" for="username">Username</label>
+        <input type="username" id="username" name="username" class="form-control" required />
+      </div>
+      <!-- Password input -->
+      <div class="form-outline mb-4">
+        <label class="form-label" for="password">Password</label>
+        <input type="password" id="password" name="password" class="form-control" required />
+      </div>
+      <button class="btn btn-primary btn-block" name="submit" id="submit" type="submit" value="suc">Login</button>
+  </div>
+  </form>
+  </div>
+  {{> footer}}
+</body>
+</html>
